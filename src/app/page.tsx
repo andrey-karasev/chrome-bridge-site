@@ -1,3 +1,4 @@
+import { AIExamples } from "@/components/ai-examples";
 import { ArchitectureDiagram } from "@/components/architecture-diagram";
 import { ComparisonTable } from "@/components/comparison-table";
 import { FeatureCard } from "@/components/feature-card";
@@ -14,6 +15,9 @@ export default function Home() {
           <nav className="hidden sm:flex gap-6 text-sm text-zinc-400">
             <a href="#features" className="hover:text-white transition-colors">
               Features
+            </a>
+            <a href="#examples" className="hover:text-white transition-colors">
+              Examples
             </a>
             <a href="#comparison" className="hover:text-white transition-colors">
               Comparison
@@ -138,9 +142,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* AI Examples */}
+      <section className="py-20 px-6 border-t border-white/5 bg-zinc-950" id="examples">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">
+            See It in Action
+          </h2>
+          <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-12">
+            Real conversations showing how AI clients use Chrome Bridge to interact with your browser.
+          </p>
+          <AIExamples />
+        </div>
+      </section>
+
       {/* Comparison */}
       <section
-        className="py-20 px-6 border-t border-white/5 bg-zinc-950"
+        className="py-20 px-6 border-t border-white/5"
         id="comparison"
       >
         <div className="max-w-5xl mx-auto">
