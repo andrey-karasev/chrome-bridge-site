@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Background -->
+  <rect width="64" height="64" rx="14" fill="#0a0a0a"/>
+
+  <!-- Browser tab (left) -->
+  <rect x="8" y="18" width="20" height="16" rx="3" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <line x1="8" y1="23" x2="28" y2="23" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <!-- AI node (right) -->
+  <rect x="36" y="18" width="20" height="16" rx="3" fill="none" stroke="#10b981" stroke-width="2.5"/>
+  <text x="46" y="30" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#10b981">AI</text>
+
+  <!-- Bridge arcs -->
+  <path d="M 28 24 C 31 24, 31 20, 32 20 C 33 20, 33 24, 36 24" stroke="url(#ico-grad)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 28 30 C 31 30, 31 34, 32 34 C 33 34, 33 30, 36 30" stroke="url(#ico-grad)" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Center bolt -->
+  <path d="M 30.5 25 L 33 27.5 L 31.5 27.5 L 34 31 L 31.5 28.5 L 33 28.5 L 30.5 25" fill="#06b6d4"/>
+
+  <!-- Bottom text -->
+  <text x="32" y="48" text-anchor="middle" font-family="monospace" font-size="6" font-weight="bold" fill="#ededed">MCP</text>
+
+  <defs>
+    <linearGradient id="ico-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+</svg>

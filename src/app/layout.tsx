@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Chrome Bridge MCP — Control Your Real Browser with AI",
   description:
     "An MCP server + Chrome extension that lets Claude Code interact with your actual browser — with your sessions, cookies, and logins intact. No headless browsers, no separate profiles.",
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
     title: "Chrome Bridge MCP",
     description:

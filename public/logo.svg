@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#0a0a0a" stroke="url(#border-grad)" stroke-width="8"/>
+
+  <!-- Browser window (left) -->
+  <rect x="80" y="160" width="140" height="110" rx="12" fill="none" stroke="#f59e0b" stroke-width="8"/>
+  <line x1="80" y1="188" x2="220" y2="188" stroke="#f59e0b" stroke-width="6"/>
+  <circle cx="98" cy="174" r="5" fill="#f59e0b"/>
+  <circle cx="114" cy="174" r="5" fill="#f59e0b"/>
+  <circle cx="130" cy="174" r="5" fill="#f59e0b"/>
+
+  <!-- AI node (right) -->
+  <rect x="292" y="160" width="140" height="110" rx="12" fill="none" stroke="#10b981" stroke-width="8"/>
+  <text x="362" y="228" text-anchor="middle" font-family="monospace" font-size="36" font-weight="bold" fill="#10b981">AI</text>
+
+  <!-- Bridge/connection arc -->
+  <path d="M 220 215 C 240 215, 245 180, 256 180 C 267 180, 272 215, 292 215" stroke="url(#bridge-grad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 220 225 C 240 225, 245 260, 256 260 C 267 260, 272 225, 292 225" stroke="url(#bridge-grad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Connection dots -->
+  <circle cx="256" cy="180" r="6" fill="#06b6d4"/>
+  <circle cx="256" cy="260" r="6" fill="#06b6d4"/>
+
+  <!-- WebSocket lightning bolt in center -->
+  <path d="M 250 200 L 258 218 L 252 218 L 262 240 L 254 222 L 260 222 L 250 200" fill="#06b6d4"/>
+
+  <!-- Label -->
+  <text x="256" y="340" text-anchor="middle" font-family="monospace" font-size="28" font-weight="bold" fill="#ededed">chrome-bridge</text>
+  <text x="256" y="370" text-anchor="middle" font-family="monospace" font-size="18" fill="#71717a">MCP Server</text>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="bridge-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { AIExamples } from "@/components/ai-examples";
 import { ArchitectureDiagram } from "@/components/architecture-diagram";
 import { ComparisonTable } from "@/components/comparison-table";
@@ -11,7 +12,10 @@ export default function Home() {
       {/* Header */}
       <header className="fixed top-0 w-full z-50 border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="font-mono font-bold text-lg">chrome-bridge</span>
+          <span className="font-mono font-bold text-lg flex items-center gap-2">
+            <Image src="/icon.svg" alt="Chrome Bridge" width={28} height={28} />
+            chrome-bridge
+          </span>
           <nav className="hidden sm:flex gap-6 text-sm text-zinc-400">
             <a href="#features" className="hover:text-white transition-colors">
               Features
